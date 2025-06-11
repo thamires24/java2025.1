@@ -1,0 +1,46 @@
+1.
+INSERT INTO livro(titulo, autor, ano_publicacao, genero, quantidade_estoque, editora) VALUES 
+		('Coisas Maiores', 'Steven Furtick', 2023, 'Religião', 5, 'Inspire'),
+		('Lidere sua Vida', 'Matheus Soares', 2024, 'AutoAjuda', 3, 'Editora Vida'),
+		('O Fazedor de Discípulos', 'Danilo Figueira', 2014, 'Liderança', 4, 'Selah Produções'),
+		('Mulher Real', 'Junia Hayashi', 2023, 'AutoAjuda', 10, 'Quatro Ventos'),
+		('500 Fatos Fantáticos sobre Ciências', 'Dan Green', 2022, 'Infantil', 8, 'Pé da Letra'),
+		('O fator Barnabé', 'Abe Huber', 2014, 'Religião', 6, 'mda Publicações'),
+		('365 piadas, curiosidades e adivinhas', 'Vários', 2016, 'Infantil', 13, 'Pé da Letra'),
+		('Decidir Machuca, Não Decidir Mata', 'Diego Menin', 2023, 'AutoAjuda', 8, 'Autor da Fé'),
+ 		('Teologia de John Wesley', 'Kenneth J. Collins', 2010, 'Teologia', 8, 'CPAD'),
+		('O Purê de Batatas', 'Abe Huber', 2017, 'Religião', 5, 'mda Publicações');
+
+
+
+2.
+INSERT INTO usuario(nome, email, telefone, endereco) VALUES
+		('André dos Santos', 'andresantos@gmail.com', 24999224567, 'Rua 16 de Março, 123'),
+		('Lucas Bernardes', 'lucas123@gmail.com', 32993361025, 'Rua Lopes Trovão, 2565'),
+		('Roberto Silveira', 'robertinho20@hotmail.com', 21988256564, 'Rua do Imperador, 853'),
+		('Beartriz Almeida', 'biaalmeida@gmail.com', 24988653214,'Rua das Flores, 70'),
+		('Kamila Santana', 'ksantana@hotmail.com', 21988137585, 'Rua Cristóvão Colombo, 500');
+
+3.
+UPDATE usuario
+	SET telefone = '24988133539'
+	WHERE id_usuario = 2
+
+
+4.
+INSERT INTO emprestimo(data_emprestimo, status_livro, id_usuario, id_livro) VALUES
+		('15-03-2025', 'Emprestado', 2, 6),
+		('28-03-2025', 'Emprestado', 1, 8),
+		('15-02-2024', 'Emprestado', 4, 1);
+
+INSERT INTO emprestimo(data_emprestimo, data_devolucao, status_livro, id_usuario, id_livro) VALUES
+		('25-02-2025', '13-03-2025', 'Devolvido', 5, 9),
+		('26-01-2025', '27-03-2025', 'Devolvido', 2, 3);
+Precisei inserir dados na tabela 'emprestimo' para realizar esta atividade.
+
+O banco de dados não me permite excluir um usuário, pois existe uma restrição para alteração ou exclusão de uma tabela quando esta tem uma chave estrangeira em outra tabela
+No nosso caso, o 'id_usuario' é uma chave estrangeira na tabela de 'emprestimo'.
+
+
+5.A instrução DELETE é usada para excluir linhas de uma tabela, mas não libera o espaço ocupado por essas linhas. 
+Já o comando TRUNCATE é usado para excluir as linhas de uma tabela e liberar o espaço ocupado por essas linhas
