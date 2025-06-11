@@ -9,7 +9,7 @@ public class AulaPratica1 {
 	
 	//conta corrente $50 
 	public void contructor() {
-	saldo = 0.2f;
+	saldo = 0.2;
 	status = false;
 	}
 	

@@ -1,0 +1,19 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<classpath>
+	<classpathentry kind="con" path="org.eclipse.jdt.launching.JRE_CONTAINER"/>
+	<classpathentry kind="src" path="AtividadesPraticas/src"/>
+	<classpathentry kind="src" path="Aula05/src"/>
+	<classpathentry kind="src" path="Aula06/src"/>
+	<classpathentry kind="src" path="Aula08/src"/>
+	<classpathentry kind="src" path="Aula09/src"/>
+	<classpathentry kind="src" path="aula1/src"/>
+	<classpathentry kind="src" path="Aula10_/src"/>
+	<classpathentry kind="src" path="Aula11/src"/>
+	<classpathentry kind="src" path="aula2/src"/>
+	<classpathentry kind="src" path="Aula3/src"/>
+	<classpathentry kind="src" path="Aula5/src"/>
+	<classpathentry kind="src" path="aulaGuanabara/src"/>
+	<classpathentry kind="src" path="Revisao/src"/>
+	<classpathentry kind="lib" path="Aula11/postgresql-42.7.5.jar"/>
+	<classpathentry kind="output" path="AtividadesPraticas/bin"/>
+</classpath>
